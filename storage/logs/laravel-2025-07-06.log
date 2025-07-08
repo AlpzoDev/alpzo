@@ -1,0 +1,1096 @@
+[2025-07-06 16:05:34] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:05:37] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:05:43] local.ERROR: Trying to access array offset on null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on null at C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php:151)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(151): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(78): Native\\Laravel\\ChildProcess->fromRuntimeProcess(NULL)
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Native\\Laravel\\ChildProcess->start(Array, 'nginx', 'C:\\\\alpzo\\\\bin\\\\ng...')
+#4 C:\\github\\nativephp\\localzone-inertia\\app\\Jobs\\Nginx\\StartJob.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('start', Array)
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\Nginx\\StartJob->handle()
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(126): Illuminate\\Container\\Container->call(Array)
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(130): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\Nginx\\StartJob), false)
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(121): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(69): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\SyncJob), Object(App\\Jobs\\Nginx\\StartJob))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\SyncJob), Array)
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(76): Illuminate\\Queue\\Jobs\\Job->fire()
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(56): Illuminate\\Queue\\SyncQueue->executeJob(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(244): Illuminate\\Queue\\SyncQueue->push(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(228): Illuminate\\Bus\\Dispatcher->pushCommandToQueue(Object(Illuminate\\Queue\\SyncQueue), Object(App\\Jobs\\Nginx\\StartJob))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(95): Illuminate\\Bus\\Dispatcher->dispatchToQueue(Object(App\\Jobs\\Nginx\\StartJob))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(444): Illuminate\\Bus\\Dispatcher->dispatchSync(Object(App\\Jobs\\Nginx\\StartJob), NULL)
+#26 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(32): dispatch_sync(Object(App\\Jobs\\Nginx\\StartJob))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(17): App\\Providers\\NativeAppServiceProvider->App\\Providers\\{closure}(Object(Native\\Laravel\\Windows\\PendingOpenWindow))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(9): Native\\Laravel\\Windows\\PendingOpenWindow->open()
+#29 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(30): Native\\Laravel\\Windows\\PendingOpenWindow->__destruct()
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#35 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#66 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#67 {main}
+"} 
+[2025-07-06 16:05:46] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:05:48] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:05:50] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 24,
+    "socket": null
+}  
+[2025-07-06 16:05:53] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 23,
+    "socket": null
+}  
+[2025-07-06 16:05:57] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 24,
+    "socket": null
+}  
+[2025-07-06 16:06:00] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:06:04] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 27,
+    "socket": null
+}  
+[2025-07-06 16:07:20] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:07:22] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:07:25] local.ERROR: Trying to access array offset on null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on null at C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php:151)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(151): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(78): Native\\Laravel\\ChildProcess->fromRuntimeProcess(NULL)
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Native\\Laravel\\ChildProcess->start(Array, 'nginx', 'C:\\\\alpzo\\\\bin\\\\ng...')
+#4 C:\\github\\nativephp\\localzone-inertia\\app\\Jobs\\Nginx\\StartJob.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('start', Array)
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\Nginx\\StartJob->handle()
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(126): Illuminate\\Container\\Container->call(Array)
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(130): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\Nginx\\StartJob), false)
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(121): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(69): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\SyncJob), Object(App\\Jobs\\Nginx\\StartJob))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\SyncJob), Array)
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(76): Illuminate\\Queue\\Jobs\\Job->fire()
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(56): Illuminate\\Queue\\SyncQueue->executeJob(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(244): Illuminate\\Queue\\SyncQueue->push(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(228): Illuminate\\Bus\\Dispatcher->pushCommandToQueue(Object(Illuminate\\Queue\\SyncQueue), Object(App\\Jobs\\Nginx\\StartJob))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(95): Illuminate\\Bus\\Dispatcher->dispatchToQueue(Object(App\\Jobs\\Nginx\\StartJob))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(444): Illuminate\\Bus\\Dispatcher->dispatchSync(Object(App\\Jobs\\Nginx\\StartJob), NULL)
+#26 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(34): dispatch_sync(Object(App\\Jobs\\Nginx\\StartJob))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(17): App\\Providers\\NativeAppServiceProvider->App\\Providers\\{closure}(Object(Native\\Laravel\\Windows\\PendingOpenWindow))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(9): Native\\Laravel\\Windows\\PendingOpenWindow->open()
+#29 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(32): Native\\Laravel\\Windows\\PendingOpenWindow->__destruct()
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#35 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#66 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#67 {main}
+"} 
+[2025-07-06 16:07:29] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 27,
+    "socket": null
+}  
+[2025-07-06 16:07:31] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 28,
+    "socket": null
+}  
+[2025-07-06 16:07:37] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 27,
+    "socket": null
+}  
+[2025-07-06 16:07:39] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:07:41] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:07:44] local.ERROR: Trying to access array offset on null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on null at C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php:151)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(151): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(78): Native\\Laravel\\ChildProcess->fromRuntimeProcess(NULL)
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Native\\Laravel\\ChildProcess->start(Array, 'nginx', 'C:\\\\alpzo\\\\bin\\\\ng...')
+#4 C:\\github\\nativephp\\localzone-inertia\\app\\Jobs\\Nginx\\StartJob.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('start', Array)
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\Nginx\\StartJob->handle()
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(126): Illuminate\\Container\\Container->call(Array)
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(130): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\Nginx\\StartJob), false)
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(121): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(69): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\SyncJob), Object(App\\Jobs\\Nginx\\StartJob))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\SyncJob), Array)
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(76): Illuminate\\Queue\\Jobs\\Job->fire()
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(56): Illuminate\\Queue\\SyncQueue->executeJob(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(244): Illuminate\\Queue\\SyncQueue->push(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(228): Illuminate\\Bus\\Dispatcher->pushCommandToQueue(Object(Illuminate\\Queue\\SyncQueue), Object(App\\Jobs\\Nginx\\StartJob))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(95): Illuminate\\Bus\\Dispatcher->dispatchToQueue(Object(App\\Jobs\\Nginx\\StartJob))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(444): Illuminate\\Bus\\Dispatcher->dispatchSync(Object(App\\Jobs\\Nginx\\StartJob), NULL)
+#26 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(34): dispatch_sync(Object(App\\Jobs\\Nginx\\StartJob))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(17): App\\Providers\\NativeAppServiceProvider->App\\Providers\\{closure}(Object(Native\\Laravel\\Windows\\PendingOpenWindow))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(9): Native\\Laravel\\Windows\\PendingOpenWindow->open()
+#29 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(32): Native\\Laravel\\Windows\\PendingOpenWindow->__destruct()
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#35 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#66 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#67 {main}
+"} 
+[2025-07-06 16:07:48] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 27,
+    "socket": null
+}  
+[2025-07-06 16:08:01] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 28,
+    "socket": null
+}  
+[2025-07-06 16:08:06] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 27,
+    "socket": null
+}  
+[2025-07-06 16:08:16] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 28,
+    "socket": null
+}  
+[2025-07-06 16:08:49] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:08:51] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:08:54] local.ERROR: Trying to access array offset on null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on null at C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php:151)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(151): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(78): Native\\Laravel\\ChildProcess->fromRuntimeProcess(NULL)
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Native\\Laravel\\ChildProcess->start(Array, 'nginx', 'C:\\\\alpzo\\\\bin\\\\ng...')
+#4 C:\\github\\nativephp\\localzone-inertia\\app\\Jobs\\Nginx\\StartJob.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('start', Array)
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\Nginx\\StartJob->handle()
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(126): Illuminate\\Container\\Container->call(Array)
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(130): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\Nginx\\StartJob), false)
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(121): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(69): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\SyncJob), Object(App\\Jobs\\Nginx\\StartJob))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\SyncJob), Array)
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(76): Illuminate\\Queue\\Jobs\\Job->fire()
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(56): Illuminate\\Queue\\SyncQueue->executeJob(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(244): Illuminate\\Queue\\SyncQueue->push(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(228): Illuminate\\Bus\\Dispatcher->pushCommandToQueue(Object(Illuminate\\Queue\\SyncQueue), Object(App\\Jobs\\Nginx\\StartJob))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(95): Illuminate\\Bus\\Dispatcher->dispatchToQueue(Object(App\\Jobs\\Nginx\\StartJob))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(444): Illuminate\\Bus\\Dispatcher->dispatchSync(Object(App\\Jobs\\Nginx\\StartJob), NULL)
+#26 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(34): dispatch_sync(Object(App\\Jobs\\Nginx\\StartJob))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(17): App\\Providers\\NativeAppServiceProvider->App\\Providers\\{closure}(Object(Native\\Laravel\\Windows\\PendingOpenWindow))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(9): Native\\Laravel\\Windows\\PendingOpenWindow->open()
+#29 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(32): Native\\Laravel\\Windows\\PendingOpenWindow->__destruct()
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#35 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#66 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#67 {main}
+"} 
+[2025-07-06 16:08:57] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 23,
+    "socket": null
+}  
+[2025-07-06 16:08:59] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 22,
+    "socket": null
+}  
+[2025-07-06 16:09:01] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 21,
+    "socket": null
+}  
+[2025-07-06 16:09:03] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 22,
+    "socket": null
+}  
+[2025-07-06 16:09:06] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 23,
+    "socket": null
+}  
+[2025-07-06 16:09:08] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 24,
+    "socket": null
+}  
+[2025-07-06 16:09:10] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:09:12] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:09:40] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:09:50] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:09:55] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:09:57] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:10:05] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:10:07] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:10:10] local.ERROR: Call to undefined method Native\Laravel\MenuBar\PendingCreateMenuBar::title() {"exception":"[object] (Error(code: 0): Call to undefined method Native\\Laravel\\MenuBar\\PendingCreateMenuBar::title() at C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php:27)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#4 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#37 {main}
+"} 
+[2025-07-06 16:10:14] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:10:16] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:10:43] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:10:45] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:10:48] local.ERROR: Call to undefined method Native\Laravel\MenuBar\PendingCreateMenuBar::title() {"exception":"[object] (Error(code: 0): Call to undefined method Native\\Laravel\\MenuBar\\PendingCreateMenuBar::title() at C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php:27)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#4 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#35 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#37 {main}
+"} 
+[2025-07-06 16:10:52] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  
+[2025-07-06 16:33:40] local.ERROR: Command "native:config" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:config\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve
+    ray:publish-config at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:config')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:33:43] local.ERROR: Command "native:php-ini" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"native:php-ini\" is not defined.
+
+Did you mean one of these?
+    native:build
+    native:bundle
+    native:db:wipe
+    native:debug
+    native:install
+    native:migrate
+    native:migrate:fresh
+    native:publish
+    native:reset
+    native:seed
+    native:serve at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('native:php-ini')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2025-07-06 16:33:49] local.ERROR: Trying to access array offset on null {"exception":"[object] (ErrorException(code: 0): Trying to access array offset on null at C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php:151)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(151): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}(2, 'Trying to acces...', 'C:\\\\github\\\\nativ...', 151)
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\ChildProcess.php(78): Native\\Laravel\\ChildProcess->fromRuntimeProcess(NULL)
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(361): Native\\Laravel\\ChildProcess->start(Array, 'nginx', 'C:\\\\alpzo\\\\bin\\\\ng...')
+#4 C:\\github\\nativephp\\localzone-inertia\\app\\Jobs\\Nginx\\StartJob.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('start', Array)
+#5 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Jobs\\Nginx\\StartJob->handle()
+#6 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#7 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#8 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#9 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#10 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(126): Illuminate\\Container\\Container->call(Array)
+#11 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Bus\\Dispatcher->Illuminate\\Bus\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#12 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#13 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(130): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#14 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(126): Illuminate\\Bus\\Dispatcher->dispatchNow(Object(App\\Jobs\\Nginx\\StartJob), false)
+#15 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Queue\\CallQueuedHandler->Illuminate\\Queue\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#16 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(App\\Jobs\\Nginx\\StartJob))
+#17 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(121): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#18 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\CallQueuedHandler.php(69): Illuminate\\Queue\\CallQueuedHandler->dispatchThroughMiddleware(Object(Illuminate\\Queue\\Jobs\\SyncJob), Object(App\\Jobs\\Nginx\\StartJob))
+#19 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\Jobs\\Job.php(102): Illuminate\\Queue\\CallQueuedHandler->call(Object(Illuminate\\Queue\\Jobs\\SyncJob), Array)
+#20 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(76): Illuminate\\Queue\\Jobs\\Job->fire()
+#21 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Queue\\SyncQueue.php(56): Illuminate\\Queue\\SyncQueue->executeJob(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#22 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(244): Illuminate\\Queue\\SyncQueue->push(Object(App\\Jobs\\Nginx\\StartJob), '', NULL)
+#23 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(228): Illuminate\\Bus\\Dispatcher->pushCommandToQueue(Object(Illuminate\\Queue\\SyncQueue), Object(App\\Jobs\\Nginx\\StartJob))
+#24 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Bus\\Dispatcher.php(95): Illuminate\\Bus\\Dispatcher->dispatchToQueue(Object(App\\Jobs\\Nginx\\StartJob))
+#25 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(444): Illuminate\\Bus\\Dispatcher->dispatchSync(Object(App\\Jobs\\Nginx\\StartJob), NULL)
+#26 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(34): dispatch_sync(Object(App\\Jobs\\Nginx\\StartJob))
+#27 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(17): App\\Providers\\NativeAppServiceProvider->App\\Providers\\{closure}(Object(Native\\Laravel\\Windows\\PendingOpenWindow))
+#28 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Windows\\PendingOpenWindow.php(9): Native\\Laravel\\Windows\\PendingOpenWindow->open()
+#29 C:\\github\\nativephp\\localzone-inertia\\app\\Providers\\NativeAppServiceProvider.php(32): Native\\Laravel\\Windows\\PendingOpenWindow->__destruct()
+#30 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Controllers\\NativeAppBootedController.php(13): App\\Providers\\NativeAppServiceProvider->boot()
+#31 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(47): Native\\Laravel\\Http\\Controllers\\NativeAppBootedController->__invoke(Object(Illuminate\\Http\\Request))
+#32 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(Native\\Laravel\\Http\\Controllers\\NativeAppBootedController), '__invoke')
+#33 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#34 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#35 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\github\\nativephp\\localzone-inertia\\vendor\\nativephp\\laravel\\src\\Http\\Middleware\\PreventRegularBrowserAccess.php(13): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Native\\Laravel\\Http\\Middleware\\PreventRegularBrowserAccess->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1220): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\github\\nativephp\\localzone-inertia\\public\\index.php(17): Illuminate\\Foundation\\Application->handleRequest(Object(Illuminate\\Http\\Request))
+#66 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\github\\\\nativ...')
+#67 {main}
+"} 
+[2025-07-06 16:33:51] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 25,
+    "socket": null
+}  
+[2025-07-06 16:33:54] local.INFO: Broadcasting [Native\Laravel\Events\PowerMonitor\SpeedLimitChanged] on channels [nativephp] with payload:
+{
+    "limit": 26,
+    "socket": null
+}  

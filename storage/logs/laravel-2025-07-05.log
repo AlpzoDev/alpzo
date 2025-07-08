@@ -1,0 +1,10 @@
+[2025-07-05 22:49:07] local.ERROR: There are no commands defined in the "dt" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"dt\" namespace. at C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php:659)
+[stacktrace]
+#0 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(708): Symfony\\Component\\Console\\Application->findNamespace('dt')
+#1 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(283): Symfony\\Component\\Console\\Application->find('dt:link')
+#2 C:\\github\\nativephp\\localzone-inertia\\vendor\\symfony\\console\\Application.php(192): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\github\\nativephp\\localzone-inertia\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\github\\nativephp\\localzone-inertia\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
