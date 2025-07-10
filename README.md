@@ -1,285 +1,285 @@
-# Alpzo - Yerel Web Geliştirme Ortamı Yöneticisi
+# Alpzo - Local Web Development Environment Manager
 
 <p align="center">
-  <strong>Windows için geliştirilmiş, ücretsiz ve açık kaynaklı web geliştirme araçları yönetim platformu</strong>
+  <strong>A free and open-source web development tools management platform designed for Windows</strong>
 </p>
 
-## 📋 İçindekiler
+> **Language**: 🇺🇸 English | [🇹🇷 Türkçe](README.tr.md)
 
-- [Giriş](#giriş)
-- [Neden Alpzo?](#neden-alpzo)
-- [Temel Özellikler](#temel-özellikler)
-- [Kurulum ve Başlangıç](#kurulum-ve-başlangıç)
-- [Kullanım Kılavuzu](#kullanım-kılavuzu)
-    - [PHP Yönetimi](#php-yönetimi)
-    - [NodeJS Yönetimi](#nodejs-yönetimi)
-    - [Proje Yönetimi](#proje-yönetimi)
-    - [Path Yönetimi](#path-yönetimi)
-- [Güvenlik ve İzinler](#güvenlik-ve-izinler)
-- [Sıkça Sorulan Sorular](#sıkça-sorulan-sorular)
-- [Yol Haritası](#yol-haritası)
-- [Lisans](#lisans)
+## 📋 Table of Contents
 
-## 🎯 Giriş
+- [Introduction](#introduction)
+- [Why Alpzo?](#why-alpzo)
+- [Key Features](#key-features)
+- [Installation and Getting Started](#installation-and-getting-started)
+- [User Guide](#user-guide)
+    - [PHP Management](#php-management)
+    - [NodeJS Management](#nodejs-management)
+    - [Project Management](#project-management)
+    - [Path Management](#path-management)
+- [Security and Permissions](#security-and-permissions)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Roadmap](#roadmap)
+- [License](#license)
 
-Alpzo, web geliştiricilerin yerel geliştirme ortamlarını kolayca yönetebilmeleri için tasarlanmış kapsamlı bir araçtır. PHP, MySQL, Nginx ve NodeJS gibi temel teknolojileri tek bir arayüzden yönetmenizi sağlar. Şu anda sadece Windows işletim sistemi için geliştirilmiştir.
+## 🎯 Introduction
 
-## 💡 Neden Alpzo?
+Alpzo is a comprehensive tool designed to help web developers easily manage their local development environments. It allows you to manage essential technologies like PHP, MySQL, Nginx, and NodeJS from a single interface. Currently, it is developed exclusively for Windows operating systems.
 
-Alpzo'nun geliştirilme motivasyonu, mevcut çözümlerdeki eksikliklerden kaynaklanmaktadır:
+## 💡 Why Alpzo?
 
-### Mevcut Çözümlerin Sorunları:
-- **Güncellik Sorunu**: Piyasadaki alternatiflerin çoğu güncel değil veya düzenli güncelleme almıyor
-- **Yüksek Maliyet**: Güncel ve işlevsel olan uygulamalar genellikle ücretli
-- **Yetersiz Destek**: Ücretsiz alternatiflerin teknik desteği sınırlı veya hiç yok
-- **Kötü Kullanıcı Deneyimi**: Karmaşık arayüzler ve kullanıcı dostu olmayan tasarımlar
-- **Özelleştirme Eksikliği**: Kullanıcı ihtiyaçlarına göre uyarlanamayan katı yapılar
+The motivation for developing Alpzo stems from the shortcomings of existing solutions:
 
-### Alpzo'nun Çözümü:
-- ✅ **Tamamen Ücretsiz**: Hiçbir gizli ücret veya premium özellik yok
-- ✅ **Açık Kaynak**: Kodlar herkese açık, ihtiyaçlarınıza göre özelleştirebilirsiniz
-- ✅ **Modern ve Kullanıcı Dostu**: Basit ve anlaşılır arayüz tasarımı
-- ✅ **Aktif Geliştirme**: Düzenli güncellemeler ve yeni özellikler
+### Issues with Current Solutions:
+- **Outdated Software**: Most alternatives on the market are outdated or don't receive regular updates
+- **High Costs**: Current and functional applications are often paid
+- **Insufficient Support**: Free alternatives have limited or no technical support
+- **Poor User Experience**: Complex interfaces and non-user-friendly designs
+- **Lack of Customization**: Rigid structures that cannot be adapted to user needs
 
-## ✨ Temel Özellikler
+### Alpzo's Solution:
+- ✅ **Completely Free**: No hidden fees or premium features
+- ✅ **Open Source**: Code is open to everyone, customizable to your needs
+- ✅ **Modern and User-Friendly**: Simple and intuitive interface design
+- ✅ **Active Development**: Regular updates and new features
 
-### 🚀 Otomatik Başlatma Sistemi
+## ✨ Key Features
 
-Alpzo her açılışta şu işlemleri otomatik olarak gerçekleştirir:
+### 🚀 Automatic Startup System
 
-1. **Sistem Kontrolü**
-    - Kritik dizinlerin varlığını kontrol eder
-    - Eksik dizinleri otomatik oluşturur
-    - Yapılandırma dosyalarını doğrular
+Alpzo automatically performs the following operations on each startup:
 
-2. **Servis Başlatma**
-    - MySQL veritabanı servisini başlatır
-    - Yüklü PHP sürümlerini aktif hale getirir
-    - Her PHP sürümüne otomatik port atar (9000'den başlayarak)
-    - Nginx web sunucusunu başlatır
+1. **System Check**
+    - Checks for the existence of critical directories
+    - Automatically creates missing directories
+    - Validates configuration files
 
-3. **Proje Tarama**
-    - Tanımlı dizinlerdeki projeleri tarar
-    - Yeni projeleri otomatik tespit eder
-    - Varsayılan ayarlara göre gerekli yapılandırmaları oluşturur
+2. **Service Startup**
+    - Starts MySQL database service
+    - Activates installed PHP versions
+    - Automatically assigns ports to each PHP version (starting from 9000)
+    - Starts Nginx web server
 
-> **İpucu**: Otomatik tarama özelliği performans için ayarlar sayfasından devre dışı bırakılabilir.
+3. **Project Scanning**
+    - Scans projects in defined directories
+    - Automatically detects new projects
+    - Creates necessary configurations according to default settings
 
-### 📦 PHP Yönetimi
+> **Tip**: The automatic scanning feature can be disabled from the settings page for performance reasons.
 
-PHP yönetimi, Alpzo'nun en güçlü özelliklerinden biridir:
+### 📦 PHP Management
 
-#### Desteklenen Özellikler:
+PHP management is one of Alpzo's most powerful features:
 
-**1. Sürüm Yönetimi**
-- PHP 7.x ve üzeri tüm sürümleri destekler
-- Tek tıkla PHP sürümü indirme ve kurulum
-- Birden fazla PHP sürümünü aynı anda kullanabilme
+#### Supported Features:
 
-**2. Yapılandırma Yönetimi**
-- Görsel php.ini editörü
-- Her değişiklikten önce otomatik yedekleme
-- Değişiklik geçmişi ve geri alma özelliği
+**1. Version Management**
+- Supports all PHP 7.x and later versions
+- One-click PHP version download and installation
+- Ability to use multiple PHP versions simultaneously
 
-**3. Port Yönetimi**
-- Otomatik port ataması (9000'den başlar, her sürüm için +1)
-- Port çakışmalarını otomatik tespit ve çözüm
+**2. Configuration Management**
+- Visual php.ini editor
+- Automatic backup before each change
+- Change history and rollback functionality
 
-**4. Servis Kontrolü**
-- PHP-FPM servislerini başlatma/durdurma
-- Toplu servis yönetimi
-- Aktif PHP modüllerini görüntüleme
+**3. Port Management**
+- Automatic port assignment (starts from 9000, +1 for each version)
+- Automatic detection and resolution of port conflicts
 
-**5. Proje İlişkilendirme**
-- Her proje için farklı PHP sürümü kullanabilme
-- PHP sürümüne bağlı projeleri listeleme
-- Güvenli silme (kullanımda olan sürümler silinemez)
+**4. Service Control**
+- Start/stop PHP-FPM services
+- Bulk service management
+- Display active PHP modules
 
-### 🟢 NodeJS Yönetimi
+**5. Project Association**
+- Ability to use different PHP versions for each project
+- List projects linked to PHP versions
+- Safe deletion (versions in use cannot be deleted)
 
-NodeJS yönetimi basit ve etkilidir:
+### 🟢 NodeJS Management
 
-- Tüm NodeJS sürümlerini listeleme
-- İstediğiniz sürümü indirme ve kurma
-- Sürümler arası hızlı geçiş
-- Kullanılmayan sürümleri temizleme
+NodeJS management is simple and effective:
 
-### 📁 Proje Yönetimi
+- List all NodeJS versions
+- Download and install desired versions
+- Quick switching between versions
+- Clean up unused versions
 
-Alpzo'nun proje yönetimi özellikleri, modern web geliştirme ihtiyaçlarına göre tasarlanmıştır:
+### 📁 Project Management
 
-#### Desteklenen Proje Tipleri:
+Alpzo's project management features are designed for modern web development needs:
+
+#### Supported Project Types:
 - **Backend**: Laravel, Blank PHP
 - **Frontend**: Vue, React, Angular, Svelte
 - **Full-Stack**: Nuxt.js, Next.js
 - **Build Tools**: Vite
 
-#### Proje Özellikleri:
+#### Project Features:
 
-**1. Proje Oluşturma**
-- Tanımlı dizinlerde tek tıkla proje oluşturma
-- Otomatik proje yapılandırması
-- Türkçe karakter kontrolü (URL uyumluluğu için)
+**1. Project Creation**
+- One-click project creation in defined directories
+- Automatic project configuration
+- Turkish character control (for URL compatibility)
 
-**2. URL Yönetimi**
-- Proje adına göre otomatik URL oluşturma
-- Windows hosts dosyasına otomatik ekleme
-- SSL sertifikası desteği (geliştirme amaçlı)
+**2. URL Management**
+- Automatic URL generation based on project name
+- Automatic addition to Windows hosts file
+- SSL certificate support (for development purposes)
 
-**3. Favori Sistemi**
-- Sık kullanılan projeleri favorilere ekleme
-- Ana sayfada favori projelerin hızlı erişimi
+**3. Favorites System**
+- Add frequently used projects to favorites
+- Quick access to favorite projects on the homepage
 
-**4. Log Yönetimi**
-- Her proje için ayrı Nginx logları
-- Error ve access loglarını ayrı dosyalarda saklama
-- Log dosyalarını görüntüleme ve temizleme
+**4. Log Management**
+- Separate Nginx logs for each project
+- Store error and access logs in separate files
+- View and clean log files
 
-**5. Proje Silme**
-- Güvenli silme onayı
-- Proje dosyalarını tamamen kaldırma
-- Nginx yapılandırmasını temizleme
-- İlgili log dosyalarını silme
+**5. Project Deletion**
+- Safe deletion confirmation
+- Complete removal of project files
+- Clean up Nginx configuration
+- Delete related log files
 
-**6. Filtreleme ve Arama**
-- Proje adına göre arama
-- PHP/NodeJS sürümüne göre filtreleme
-- Favori durumuna göre listeleme
-- Path'e göre gruplama
+**6. Filtering and Search**
+- Search by project name
+- Filter by PHP/NodeJS version
+- List by favorite status
+- Group by path
 
-### 🗂️ Path (Dizin) Yönetimi
+### 🗂️ Path (Directory) Management
 
-Path yönetimi, farklı konumlardaki projelerinizi organize etmenizi sağlar:
+Path management allows you to organize your projects in different locations:
 
-**Özellikler:**
-- Birden fazla proje dizini tanımlama
-- Varsayılan dizin belirleme
-- Dizinleri listeleme ve düzenleme
-- İlk kurulumda otomatik www klasörü oluşturma
+**Features:**
+- Define multiple project directories
+- Set default directory
+- List and edit directories
+- Automatic www folder creation on first installation
 
-**Kullanım Senaryoları:**
-- Farklı diskler veya bölümlerdeki projeleri yönetme
-- Müşteri projelerini ayrı dizinlerde organize etme
-- Test ve production benzeri ortamları ayırma
+**Usage Scenarios:**
+- Manage projects on different disks or partitions
+- Organize client projects in separate directories
+- Separate test and production-like environments
 
+## 🔧 Installation and Getting Started
 
+> **Requirement**: Windows 10 (64-bit) or later
 
-## 🔧 Kurulum ve Başlangıç
+### Installation Steps:
 
-> **Gereksinim**: Windows 10 (64-bit) veya üzeri
+1. **Download**
+    - Download the latest version from the [Releases](https://github.com/alpzo/alpzo/releases) page
+    - Run the `.exe` installation file
 
-### Kurulum Adımları:
+2. **Installation Wizard**
+    - Choose installation directory
+    - Create Start menu shortcuts
+    - Add desktop shortcut (optional)
 
-1. **İndirme**
-    - [Releases](https://github.com/alpzo/alpzo/releases) sayfasından en son sürümü indirin
-    - `.exe` kurulum dosyasını çalıştırın
+3. **First Run**
+    - Run Alpzo **as administrator**
+    - The first installation wizard will open
+    - Set your default project directory
 
-2. **Kurulum Sihirbazı**
-    - Kurulum dizinini seçin
-    - Başlat menüsü kısayollarını oluşturun
-    - Masaüstü kısayolu ekleyin (isteğe bağlı)
+## 📖 User Guide
 
-3. **İlk Çalıştırma**
-    - Alpzo'yu **yönetici olarak** çalıştırın
-    - İlk kurulum sihirbazı açılacaktır
-    - Varsayılan proje dizininizi belirleyin
+### PHP Management
 
-## 📖 Kullanım Kılavuzu
+#### Adding a New PHP Version:
+1. Go to the "PHP Management" tab from the left menu
+2. Click the "Add New Version" button
+3. Select the desired PHP version
+4. Click the "Download and Install" button
+5. PHP will start automatically after installation is complete
 
-### PHP Yönetimi
+#### Editing php.ini:
+1. Click the "Settings" icon next to the PHP version you want to edit
+2. Select the "Edit php.ini" option
+3. Make your changes in the visual editor
+4. Click the "Save" button (automatic backup is taken)
 
-#### Yeni PHP Sürümü Ekleme:
-1. Sol menüden "PHP Yönetimi" sekmesine gidin
-2. "Yeni Sürüm Ekle" butonuna tıklayın
-3. İstediğiniz PHP sürümünü seçin
-4. "İndir ve Kur" butonuna tıklayın
-5. Kurulum tamamlandıktan sonra PHP otomatik başlayacaktır
+### NodeJS Management
 
-#### php.ini Düzenleme:
-1. Düzenlemek istediğiniz PHP sürümünün yanındaki "Ayarlar" ikonuna tıklayın
-2. "php.ini Düzenle" seçeneğini seçin
-3. Görsel editörde değişikliklerinizi yapın
-4. "Kaydet" butonuna tıklayın (otomatik yedekleme alınır)
+1. Go to the "NodeJS Management" tab
+2. View existing versions
+3. Use the "Add Version" button to add a new version
+4. Select the relevant version to change the active version
 
-### NodeJS Yönetimi
+### Project Management
 
-1. "NodeJS Yönetimi" sekmesine gidin
-2. Mevcut sürümleri görüntüleyin
-3. Yeni sürüm eklemek için "Sürüm Ekle" butonunu kullanın
-4. Aktif sürümü değiştirmek için ilgili sürümü seçin
+#### Creating a New Project:
+1. Go to the "Projects" tab or use the quick access on the homepage
+2. Click the "New Project" button
+3. Enter project information:
+    - Project name (don't use Turkish characters)
+    - Project type (Laravel, React, etc.)
+    - PHP/NodeJS version
+    - Project directory
+4. Click the "Create" button
 
-### Proje Yönetimi
+#### Project Management Tips:
+- Mark your favorite projects with the star icon
+- Use filtering features to quickly find your projects
+- Regularly check log files
 
-#### Yeni Proje Oluşturma:
-1. "Projeler" sekmesine gidin veya ana sayfadaki hızlı erişimi kullanın
-2. "Yeni Proje" butonuna tıklayın
-3. Proje bilgilerini girin:
-    - Proje adı (Türkçe karakter kullanmayın)
-    - Proje tipi (Laravel, React, vb.)
-    - PHP/NodeJS sürümü
-    - Proje dizini
-4. "Oluştur" butonuna tıklayın
+### Path Management
 
-#### Proje Yönetimi İpuçları:
-- Favori projelerinizi yıldız ikonuyla işaretleyin
-- Filtreleme özelliklerini kullanarak projelerinizi hızlıca bulun
-- Log dosyalarını düzenli kontrol edin
+1. Go to the "Settings" page
+2. Find the "Path Management" section
+3. Add directories with "Add New Path"
+4. Use the star icon to set the default directory
 
-### Path Yönetimi
+## 🔒 Security and Permissions
 
-1. "Ayarlar" sayfasına gidin
-2. "Path Yönetimi" bölümünü bulun
-3. "Yeni Path Ekle" ile dizin ekleyin
-4. Varsayılan dizini belirlemek için yıldız ikonunu kullanın
+### Administrator Permissions
 
-## 🔒 Güvenlik ve İzinler
+Alpzo **must be run as administrator** because some features require access to Windows system files:
 
-### Yönetici İzinleri
+- **Editing hosts file**: To add project URLs
+- **Service management**: To start MySQL and Nginx services
+- **Port listening**: To open necessary ports for web server
 
-Alpzo'nun bazı özellikleri Windows sistem dosyalarına erişim gerektirdiği için **yönetici olarak çalıştırılmalıdır**:
+### Security Recommendations:
+1. Only download Alpzo from trusted sources
+2. Regularly backup your projects
+3. Do not use for production environments (development purposes only)
 
-- **hosts dosyası düzenleme**: Proje URL'lerini eklemek için
-- **Servis yönetimi**: MySQL ve Nginx servislerini başlatmak için
-- **Port dinleme**: Web sunucusu için gerekli portları açmak için
+## ❓ Frequently Asked Questions
 
-### Güvenlik Önerileri:
-1. Alpzo'yu sadece güvendiğiniz kaynaklardan indirin
-2. Projelerinizi düzenli yedekleyin
-3. Üretim ortamı için kullanmayın (sadece geliştirme amaçlı)
+**Q: Is Alpzo free?**
+A: Yes, Alpzo is completely free and open source. There are no hidden fees.
 
-## ❓ Sıkça Sorulan Sorular
+**Q: Is there Mac or Linux support?**
+A: Currently, only Windows is supported. Support for other platforms is on our roadmap.
 
-**S: Alpzo ücretsiz mi?**
-C: Evet, Alpzo tamamen ücretsiz ve açık kaynaklıdır. Hiçbir gizli ücret yoktur.
+**Q: Can multiple PHP versions run simultaneously?**
+A: Yes, each PHP version runs on different ports and can be active simultaneously.
 
-**S: Mac veya Linux desteği var mı?**
-C: Şu anda sadece Windows desteklenmektedir. Diğer platformlar için destek yol haritamızda bulunmaktadır.
+**Q: Can I migrate my existing projects to Alpzo?**
+A: Yes, simply copy your projects to the defined directories. Alpzo will automatically detect them.
 
-**S: Birden fazla PHP sürümü aynı anda çalışabilir mi?**
-C: Evet, her PHP sürümü farklı portlarda çalışır ve aynı anda aktif olabilir.
+## 🗺️ Roadmap
 
-**S: Mevcut projelerimi Alpzo'ya aktarabilir miyim?**
-C: Evet, projelerinizi tanımlı dizinlere kopyalamanız yeterlidir. Alpzo otomatik olarak algılayacaktır.
+### Upcoming Features
+- ✨ Manual port change support
 
-## 🗺️ Yol Haritası
+> **Note**: The roadmap may be updated based on the development process and community feedback.
 
-### Yakında Gelecek Özellikler
-- ✨ Manuel port değiştirme desteği
+## 📄 License
 
-> **Not**: Yol haritası, geliştirme sürecine ve topluluk geri bildirimlerine göre güncellenebilir.
-
-## 📄 Lisans
-
-Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır. Detaylı bilgi için LICENSE dosyasına bakınız.
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for detailed information.
 
 ---
 
 <p align="center">
-  <strong>Alpzo</strong> ile geliştirme ortamınızı profesyonelce yönetin! 🚀
+  <strong>Alpzo</strong> - Manage your development environment professionally! 🚀
 </p>
 
 <p align="center">
-  <a href="https://github.com/alpzo/alpzo/issues">Sorun Bildir</a> •
-  <a href="https://github.com/alpzo/alpzo/discussions">Tartışmalar</a> •
+  <a href="https://github.com/alpzo/alpzo/issues">Report Issue</a> •
+  <a href="https://github.com/alpzo/alpzo/discussions">Discussions</a> •
   <a href="https://discord.gg/alpzo">Discord</a>
 </p>
