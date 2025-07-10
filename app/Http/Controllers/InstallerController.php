@@ -28,7 +28,7 @@ class InstallerController extends Controller
         return Inertia::render('installer/index', [
             'git' => $git,
             'composer' => $composer,
-            'allPhpVersions' => collect(PHPManagerService::getPhpVersionDownloadList())->reverse()->take(4)->toArray(),
+            'allPhpVersions' => collect(PHPManagerService::getPhpVersionDownloadList())->take(4)->toArray(),
             'allNodeVersions' => collect(NodeManagerService::nodeVersionList())->take(5)->toArray()
         ]);
     }
@@ -77,27 +77,12 @@ class InstallerController extends Controller
             }
         }
 
+        if (!File::exists(Storage::disk('bin')->path('mysql'))) {
+            File::makeDirectory(Storage::disk('bin')->path('mysql'), 0755, true);
+        }
 
         if (!File::exists(Storage::disk('mysql')->path('mysql-9.2.0-winx64'))) {
-            $responseDB = public_path('alpzo\\mysql\\mysql-9.2.0-winx64.zip');
-            if (!File::exists(Storage::disk('bin')->path('mysql'))) {
-                File::makeDirectory(Storage::disk('bin')->path('mysql'), 0755, true);
-            }
-            $mysqlDir = Storage::disk('mysql')->path('mysql-9.2.0-winx64');
-
-            if (!File::exists($responseDB)) {
-                Notification::new()->title('Error')->message('mysql-9.2.0-winx64.zip not found.')->show();
-            } else {
-                Notification::new()->title('Success')->message('mysql-9.2.0-winx64.zip found.')->show();
-                $zip = new ZipArchive();
-                $zip->open($responseDB);
-                $zip->extractTo(Storage::disk('bin')->path('mysql'));
-                $zip->close();
-                ChildProcess::start([
-                    $mysqlDir . '\\bin\\mysqld.exe', '--initialize-insecure', '--console'],
-                    'mysql-setup');
-            }
-
+            ChildProcess::artisan('install:mysql-version', 'install-mysql-version');
         }
 
         defer(function () use ($request) {

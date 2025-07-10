@@ -2,11 +2,10 @@
 
 import Default from "@/Layouts/default.vue";
 import Table from "@/Components/Global/Table/index.vue";
-import Item from "@/Components/Global/Table/item.vue";
-import Td from "@/Components/Global/Table/td.vue";
 import axios from "axios";
 import {router} from "@inertiajs/vue3";
 import {ref, watch} from "vue";
+import VersionItem from "@/Components/php/VersionItem.vue";
 
 
 const columns = [
@@ -35,12 +34,6 @@ const props = defineProps({
 })
 
 
-const installPhpVersion = (phpVersion) => {
-    axios.post('/php-versions/install', phpVersion)
-        .then((response) => {
-            router.reload();
-        })
-}
 const filter = ref({
     data: '',
     allVersions: []
@@ -86,25 +79,10 @@ const isLoading = ref(false);
 
 
         <Table :columns="columns">
-            <Item v-for="phpVersion in filter.allVersions" :key="phpVersion.name">
-                <Td>
-                    {{ phpVersion.date }}
-                </Td>
-                <Td>
-                    {{ phpVersion.name }}
-                </Td>
-                <Td>
-                    {{ phpVersion.version }}
-                </Td>
-
-                <Td>
-                    <button v-if="!checkPhpVersion(phpVersion.name)" @click="installPhpVersion(phpVersion)"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
-                        Install
-                    </button>
-                    <div class="text-green-500 py-1" v-else>Installed</div>
-                </Td>
-            </Item>
+            <version-item v-for="phpVersion in filter.allVersions" :key="phpVersion.name"
+                          :phpVersion="phpVersion"
+                          :checkPhpVersion="checkPhpVersion"
+            />
         </Table>
     </default>
 </template>

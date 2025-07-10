@@ -61,9 +61,9 @@ class PHPController extends Controller
     }
 
 
-    public function installPHP(NewPHPVersionRequest $request): void
+    public function installPHP(NewPHPVersionRequest $request)
     {
-        PHPManagerService::download($request->validated());
+      return  PHPManagerService::download($request->validated());
     }
 
     public function changePHPVersion(string $phpVersion): void

@@ -7,8 +7,10 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Native\Laravel\Facades\ChildProcess;
+use Native\Laravel\Facades\Notification;
 
 class MysqlStartJob implements ShouldQueue
 {
@@ -21,7 +23,13 @@ class MysqlStartJob implements ShouldQueue
     public function handle(): void
     {
         try {
-            ChildProcess::start([Storage::disk('bin')->path('mysql\\mysql-9.2.0-winx64\\bin\\mysqld.exe'), '--console'], 'mysql');
+            if (!File::exists(Storage::disk('bin')->path('mysql\\mysql-8.4.5-winx64\\bin\\mysqld.exe'))) {
+                Notification::new()->title('Error')->message('MySQL Error')->show();
+            }
+            else {
+            ChildProcess::start([Storage::disk('bin')->path('mysql\\mysql-8.4.5-winx64\\bin\\mysqld.exe'), '--console'], 'mysql');
+
+            }
         } catch (\Exception $e) {
             throw new \Exception($e->getMessage());
         }

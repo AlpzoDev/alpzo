@@ -7,6 +7,7 @@ import Td from "@/Components/Global/Table/td.vue";
 import axios from "axios";
 import {router} from "@inertiajs/vue3";
 import {computed, reactive} from "vue";
+import VersionItem from "@/Components/node/versionItem.vue";
 
 const columns = [
     {
@@ -33,17 +34,10 @@ const search = reactive({
 });
 
 const list= computed(() => {
-  return   props.allNodeVersions.filter((php) => php.name.toLowerCase().includes(search.search.toLowerCase()));
+  return   props.allNodeVersions?.filter((php) => php?.name?.includes(search?.search));
 })
 
-const installPhpVersion = (phpVersion) => {
-    axios.post('/node-versions/install', phpVersion)
-        .then((response) => {
-            router.reload();
-        })
-}
-
-const checkPhpVersion = (phpVersion) => {
+const CheckNodeVersion = (phpVersion) => {
     return props.nodeVersions.filter((node) => node.name  ==='node-'+phpVersion+'-win-x64').length > 0;
 }
 </script>
@@ -55,22 +49,10 @@ const checkPhpVersion = (phpVersion) => {
     </template>
 
     <Table :columns="columns">
-        <Item v-for="version in allNodeVersions" :key="version.version">
-            <Td>
-                {{version.date}}
-            </Td>
-            <Td>
-                {{version.version}}
-            </Td>
-
-            <Td>
-                <button v-if="!checkPhpVersion(version.version)"  @click="installPhpVersion(version)"
-                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded">
-                    Install
-                </button>
-                <div class="text-green-500" v-else>Installed</div>
-            </Td>
-        </Item>
+       <version-item v-for="version in allNodeVersions" :key="version.version"
+                     :version="version"
+                     :checkNodeVersion="CheckNodeVersion"
+       />
     </Table>
 </default>
 </template>

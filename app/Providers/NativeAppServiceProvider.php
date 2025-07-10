@@ -11,6 +11,7 @@ use App\Services\SettingService;
 use Native\Laravel\Contracts\ProvidesPhpIni;
 use Native\Laravel\Facades\GlobalShortcut;
 use Native\Laravel\Facades\Menu;
+use Native\Laravel\Facades\MenuBar;
 use Native\Laravel\Facades\Window;
 
 
@@ -23,8 +24,6 @@ class NativeAppServiceProvider implements ProvidesPhpIni
         GlobalShortcut::key('alt+f4')
             ->event(AppServicesStopEvent::class)->register();
         Menu::make()->register();
-//        MenuBar::create()->route('menubar.index')->icon('icon.png')->alwaysOnTop()->height(700)
-//            ->resizable(false)->transparent();
         dispatch_sync(new AppFoldersCheckJob());
         $route = SettingService::getIsInstalled() == 1 ? 'dashboard' : 'install.index';
         Window::open()->minWidth(880)->minHeight(600)->width(900)->height(700)

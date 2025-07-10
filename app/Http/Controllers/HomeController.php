@@ -6,6 +6,8 @@ use App\Events\AlertEvent;
 use App\Models\Project;
 use App\Services\SettingService;
 use FilesystemIterator;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 use Native\Laravel\Facades\ChildProcess;
 
@@ -29,6 +31,11 @@ class HomeController extends Controller
                 })->filter(function ($item) {
                     if ($item['name'] == 'node' || $item['name'] == 'php') {
                         return null;
+                    }
+                    else if ($item['name'] == 'mysql') {
+                        if (!File::exists(Storage::disk('bin')->path('mysql\\mysql-8.4.5-winx64\\bin\\mysqld.exe'))) {
+                            return null;
+                        }
                     }
                     return $item;
                 })->filter()

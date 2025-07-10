@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Facades\Storage;
+use Native\Laravel\Facades\ChildProcess;
 use Native\Laravel\Notification;
 
 class NodeManagerService
@@ -78,23 +79,11 @@ class NodeManagerService
     {
         Notification::new()->title('Node ' . $node['version'] . ' Download Starting...')
             ->message('The download is in progress.')->show();
-        $response = Http::get($node['download_url']['windows']['x64']);
-        if ($response->ok()) {
-            Storage::disk('node')->put($node['version'] . '.zip', $response->body());
-            Notification::new()->title('Download Success')
-                ->message('The download was successful.')->show();
-
-            $zip = new \ZipArchive();
-            $zip->open(Storage::disk('node')->path($node['version'] . ".zip"));
-            $zip->extractTo(Storage::disk('node')->path(''));
-            $zip->close();
-            Storage::disk('node')->delete($node['version'] . ".zip");
-            Notification::new()->title('Unzip Success')
-                ->message('The unzip was successful.')->show();
-        } else {
-            Notification::new()->title('Download Failed')
-                ->message('The download failed.')->show();
-        }
+        ChildProcess::artisan([
+            'install:node-version',
+            $node['version'],
+            $node['download_url']['windows']['x64']
+        ], 'install-node-version-' . $node['version']);
     }
 
 }

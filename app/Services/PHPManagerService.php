@@ -18,41 +18,24 @@ class PHPManagerService
 {
     use PHPIniManagmentTrait;
 
-    public static function download(array $php): void
+    public static function download(array $php): bool | array
     {
         if (Storage::disk('php')->exists($php['name']) || Storage::disk('php')->exists('php-' . $php['name'] . '.zip')) {
             Notification::new()->title('Download Failed')
                 ->message('The php version already exists.')->show();
-            return;
+            return [
+                'install' => false
+            ];
         }
+       ChildProcess::artisan([
+           'install:php-version',
+           $php['name']
+       ], 'install-php-version-' . $php['name']);
 
-        $response = Http::get($php['url']);
-        if ($response->ok()) {
-            Notification::new()->title('Downloading ...')
-                ->message('The download is in progress.')->show();
-            Storage::disk('php')->put($php['name'] . '.zip', $response->body());
-            Notification::new()->title('Download Success')
-                ->message('The download was successful.')->show();
-            $zip = new \ZipArchive();
-            $zip->open(Storage::disk('php')->path($php['name'] . '.zip'));
-            $zip->extractTo(Storage::disk('php')->path($php['name'] . '/'));
-            $zip->close();
-            Storage::disk('php')->delete($php['name'] . '.zip');
-            Notification::new()->title('Unzip Success')
-                ->message('The unzip was successful.')->show();
-            defer(function () use ($php) {
-                ChildProcess::artisan('nginx:conf-re-generate', 'nginx-conf-regenerate');
-                PHPManagerService::getPhpIniDevelopmentFileCopy($php['name']);
-                PHP::stopAll();
-                PHP::startAll();
-                PHP::restart('nginx');
+        return [
+            'install' => true
+        ];
 
-            });
-
-        } else {
-            Notification::new()->title('Download Failed')
-                ->message('The download failed.')->show();
-        }
     }
 
     public static function getInfo(string $version): string
