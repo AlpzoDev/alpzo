@@ -3,7 +3,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "preview": "vite preview"
     },
     "devDependencies": {
         "@iconify-json/simple-icons": "^1.2.11",

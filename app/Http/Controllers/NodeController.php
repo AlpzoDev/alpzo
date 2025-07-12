@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\NodeVersionRequest;
 use App\Services\NodeManagerService;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
+use Native\Laravel\Notification;
 
 class NodeController extends Controller
 {

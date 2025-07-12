@@ -27,6 +27,13 @@ class PHPManagerService
                 'install' => false
             ];
         }
+        if (ChildProcess::get('install-php-version-' . $php['name'])) {
+            Notification::new()->title('Download Failed')
+                ->message('The php version is already downloading.')->show();
+            return [
+                'install' => true
+            ];
+        }
        ChildProcess::artisan([
            'install:php-version',
            $php['name']

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Item from "@/Components/Global/Table/item.vue";
 import Td from "@/Components/Global/Table/td.vue";
 import {ref} from "vue";
@@ -9,12 +9,28 @@ const props = defineProps({
     checkNodeVersion: Function,
 })
 const isLoading = ref(false)
-const installNodeVersion = (phpVersion) => {
-    axios.post('/node-versions/install', phpVersion)
+const installNodeVersion = async (phpVersion) => {
+    isLoading.value = true
+  await axios.post('/node-versions/install', phpVersion)
         .then((response) => {
             isLoading.value = response.data.install
-        })
+        }).catch(err=>alert(err))
 }
+
+Native.on('Native\\Laravel\\Events\\ChildProcess\\MessageReceived', (event) => {
+    if (event.alias==='install-node-version-'+props.version.version) {
+        console.log(event.alias + ' received')
+        isLoading.value = true
+    }
+})
+
+Native.on('Native\\Laravel\\Events\\ChildProcess\\ProcessExited', (event) => {
+    if (event.alias==='install-node-version-'+props.version.version) {
+        console.log(event.alias + ' exited')
+        isLoading.value = false
+        router.reload()
+    }
+})
 
 
 </script>

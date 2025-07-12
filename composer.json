@@ -71,7 +71,7 @@
             "@php artisan optimize",
             "@php artisan native:build win"
         ],
-        "aplzo-install": [
+        "alpzo:install": [
             "Composer\\Config::disableProcessTimeout",
             "@php artisan migrate:refresh",
             "@php artisan optimize:clear",

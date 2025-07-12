@@ -22,7 +22,6 @@ class PhpVersionCommand extends Command
         $php = [
             'name' => $this->argument('name'),
         ];
-        ray($php)->orange();
         try {
             $response = Http::get("https://windows.php.net/downloads/releases/archives/php-" . $php['name'] . ".zip");
             if ($response->ok()) {

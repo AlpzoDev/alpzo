@@ -2,8 +2,6 @@
 
 import Default from "@/Layouts/default.vue";
 import Table from "@/Components/Global/Table/index.vue";
-import axios from "axios";
-import {router} from "@inertiajs/vue3";
 import {ref, watch} from "vue";
 import VersionItem from "@/Components/php/VersionItem.vue";
 
@@ -30,7 +28,6 @@ const columns = [
 const props = defineProps({
     allPHPVersions: Array,
     phpVersions: Array,
-    globalPhpVersion: String
 })
 
 
@@ -53,9 +50,8 @@ watch(() => filter.value.data, () => {
 }, {deep: true, immediate: true});
 
 const checkPhpVersion = (phpVersion) => {
-    return props.phpVersions.filter((php) => php.name === phpVersion).length > 0;
+    return props.phpVersions.filter((php) => php.name === phpVersion.name).length > 0;
 }
-const isLoading = ref(false);
 </script>
 
 <template>
