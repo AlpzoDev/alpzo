@@ -115,6 +115,7 @@ Route::group([
     'as' => 'menubar.'
 ], function () {
     Route::get('/', [App\Http\Controllers\Menubar\IndexController::class, 'index'])->name('index');
+    Route::get('/php-versions', [App\Http\Controllers\Menubar\IndexController::class, 'phpVersions'])->name('php-versions');
 });
 
 Route::group([
