@@ -11,7 +11,6 @@ const props =defineProps({
     globalPhpVersion: String,
     globalNodeVersion: String,
     projects: Array,
-    installedPhpVersions: Array,
     phpVersions: Array
 })
 
@@ -60,12 +59,16 @@ const closePhpModal = () => {
 
 const changePhpVersion = async (version) => {
     isChangingPhp.value = true
-    selectedPhpVersion.value = version.version
+    selectedPhpVersion.value = version.name
 
     try {
-        await axios.post('/php-versions/set-default', { version: version.version })
-        router.reload()
-        closePhpModal()
+        await axios.get('/php-versions/'+version.name+'/change')
+            .then((response) => {
+                console.log(response)
+                router.reload()
+
+            })
+
     } catch (err) {
         alert('PHP sürümü değiştirilemedi: ' + err.message)
     } finally {
@@ -75,7 +78,7 @@ const changePhpVersion = async (version) => {
 }
 
 const isActivePhpVersion = (version) => {
-    return props.globalPhpVersion === version.version
+    return props.globalPhpVersion === version.name
 }
 
 const openPhpManager = () => {
@@ -145,31 +148,30 @@ const openPhpManager = () => {
             </template>
 
             <template #body>
-                <div class="space-y-4">
+                <div class="space-y-4 max-h-screen overflow-y-auto">
                     <!-- Aktif Sürüm Bilgisi -->
                     <div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                         <div class="flex items-center gap-2 mb-2">
                             <i class="icon-[mdi--information] text-blue-500"></i>
-                            <span class="font-medium text-blue-900 dark:text-blue-100">Şu an aktif:</span>
-                        </div>
-                        <p class="text-blue-700 dark:text-blue-300">
-                            PHP {{ globalPhpVersion || 'Hiçbiri' }}
+                            <p class="text-blue-700 dark:text-blue-300">
+                            PHP {{ globalPhpVersion?.split("-")[0] || 'choose' }}
                         </p>
+                        </div>
+
                     </div>
 
-                    <!-- Yüklü PHP Sürümleri -->
-                    <div v-if="installedPhpVersions?.length > 0">
-                        <h4 class="font-medium text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                            <i class="icon-[mdi--download] text-green-500"></i>
-                            Yüklü PHP Sürümleri
-                        </h4>
+                    <div v-if="phpVersions?.length > 0">
                         <div class="space-y-2">
                             <div
-                                v-for="version in installedPhpVersions"
+                                v-for="version in phpVersions"
                                 :key="version.version"
                                 class="flex items-center justify-between p-3 border border-gray-200 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors"
-                                :class="{ 'ring-2 ring-blue-500 bg-blue-50 dark:bg-blue-900/20': isActivePhpVersion(version) }"
+                                :class="{
+                                 'ring-2 ring-blue-500 bg-blue-50 dark:bg-blue-900/20': isActivePhpVersion(version),
+                                'bg-gray-100 dark:bg-gray-800': isChangingPhp
+                                }"
                                 @click="changePhpVersion(version)"
+
                             >
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
@@ -180,13 +182,13 @@ const openPhpManager = () => {
                                             PHP {{ version.version }}
                                         </div>
                                         <div class="text-sm text-gray-500 dark:text-gray-400">
-                                            {{ version.date || version.name }}
+                                            {{version.name }}
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <FwbSpinner v-if="isChangingPhp && selectedPhpVersion === version.version" size="4" />
+                                    <FwbSpinner v-if="isChangingPhp && selectedPhpVersion === version.name" size="4" />
                                     <FwbBadge v-else-if="isActivePhpVersion(version)" color="green" size="sm">
                                         <i class="icon-[mdi--check] mr-1"></i>
                                         Aktif

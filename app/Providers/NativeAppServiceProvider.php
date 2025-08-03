@@ -25,7 +25,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
             ->event(AppServicesStopEvent::class)->register();
         Menu::make()->register();
         MenuBar::create()->route('menubar.index')->transparent()
-            ->resizable(false)->height(600)->width(300);
+            ->resizable(false)->height(700)->width(300);
         dispatch_sync(new AppFoldersCheckJob());
         $route = SettingService::getIsInstalled() == 1 ? 'dashboard' : 'install.index';
         Window::open()->minWidth(880)->minHeight(600)->width(900)->height(700)

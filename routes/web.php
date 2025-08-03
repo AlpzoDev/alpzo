@@ -93,20 +93,7 @@ Route::group(['middleware' => ['isInstalled']], function () {
 
         Route::post('/auto-virtual-host', [App\Http\Controllers\Setting\AutoVituralHostController::class, '__invoke'])->name('auto-virtual-host');
         Route::post('/host-name', [App\Http\Controllers\Setting\HostNameController::class, '__invoke'])->name('host-name');
-
-//        Route::apiResource('terminal/aliases', App\Http\Controllers\AliasController::class);
-
-
     });
-
-
-//    Route::group([
-//        'prefix' => 'terminel',
-//        'as' => 'terminel.'
-//    ], function () {
-//        Route::get('/', [App\Http\Controllers\TerminelController::class, 'index'])->name('index');
-//        Route::get('/new', [App\Http\Controllers\TerminelController::class, 'new'])->name('new');
-//    });
 
 });
 

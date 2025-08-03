@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Native\Laravel\Events;
 use Native\Laravel\Facades\ChildProcess;
+use Native\Laravel\Facades\MenuBar;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
             collect(ChildProcess::all())->each(function ($process): void {
                 $process->stop();
             });
+        });
+
+        Event::listen(Events\MenuBar\MenuBarClicked::class, function ($event) {
+            MenuBar::create()->route('menubar.index');
+
         });
     }
 }
