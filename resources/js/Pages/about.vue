@@ -19,6 +19,7 @@ const alpzoPage = () => {
 
         <div class="max-w-md mx-auto">
             <img :src="Logo" alt="Alpzo Logo" class="h-16 mx-auto mb-4">
+            <p class="dark:text-white"></p>
             <p class="dark:text-white">Alpzo is a free. PHP web framework that makes it easy to build web applications with PHP.</p>
             <div class="flex justify-end mt-4">
                 <!--                <FwbButton color="alternative" @click="alpzoPage">Visit  the Alpzo  Website </FwbButton>-->

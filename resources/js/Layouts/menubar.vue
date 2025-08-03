@@ -1,6 +1,6 @@
 <script setup>
 import Logo from "@/assets/light.png";
-import {Link} from "@inertiajs/vue3";
+import {Link, usePage} from "@inertiajs/vue3";
 
 defineProps({
     title: {
@@ -12,6 +12,7 @@ defineProps({
         required: true
     }
 })
+const appVersion = usePage().props.appVersion
 </script>
 
 <template>
@@ -23,10 +24,20 @@ defineProps({
                 <img :src="Logo" alt="logo" class="h-6">
             </Link>
             <h2 class="text-lg ">{{ title }}</h2>
-            <h3 class="text-sm">{{ version }}</h3>
+            <h3 class="text-sm">{{ appVersion }}</h3>
         </div>
         <div class="grow w-full flex-1">
             <slot/>
+        </div>
+
+        <div class="flex w-full justify-end items-center gap-2">
+            <a href="#" class="text-sm text-gray-500 dark:text-gray-400 inline-block">
+                <i class="icon-[mdi--plus] text-2xl inline-block"></i>
+            </a> <a href="#" class="text-sm text-gray-500 dark:text-gray-400 inline-block">
+                <i class="icon-[mdi--plus] text-2xl inline-block"></i>
+            </a> <a href="#" class="text-sm text-gray-500 dark:text-gray-400 inline-block">
+                <i class="icon-[mdi--plus] text-2xl inline-block"></i>
+            </a>
         </div>
 
     </div>

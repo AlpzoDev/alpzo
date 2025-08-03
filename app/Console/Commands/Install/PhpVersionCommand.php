@@ -23,7 +23,7 @@ class PhpVersionCommand extends Command
             'name' => $this->argument('name'),
         ];
         try {
-            $response = Http::get("https://windows.php.net/downloads/releases/archives/php-" . $php['name'] . ".zip");
+            $response = Http::timeout(20000)->get("https://windows.php.net/downloads/releases/archives/php-" . $php['name'] . ".zip");
             if ($response->ok()) {
                 Notification::new()->title('Downloading ...')
                     ->message('The download is in progress.')->show();
@@ -47,14 +47,11 @@ class PhpVersionCommand extends Command
 
                 });
 
-            } else {
-                Notification::new()->title('Download Failed')
-                    ->message('The download failed.')->show();
             }
 
         } catch (ConnectionException $e) {
-            Notification::new()->title('Download Failed')
-                ->message('The download failed.')->show();
+            Notification::new()->title('Download PHP version Failed')
+                ->message('The php '. $this->argument('name').' download failed.')->show();
         }
     }
 

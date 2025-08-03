@@ -7,6 +7,7 @@ use App\Services\NodeManagerService;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
+use Native\Laravel\Facades\ChildProcess;
 use Native\Laravel\Notification;
 
 class NodeController extends Controller
@@ -46,6 +47,13 @@ class NodeController extends Controller
                 ->message('The node version  already exists.')->show();
             return[
                 'install' => false
+            ];
+        }
+        if (ChildProcess::get('install-node-version-' . $request->validated()['version'])) {
+            Notification::new()->title('Download Failed')
+                ->message('The node version is already downloading.')->show();
+            return [
+                'install' => true
             ];
         }
         NodeManagerService::install($request->validated());

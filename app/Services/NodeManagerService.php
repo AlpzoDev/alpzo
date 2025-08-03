@@ -77,8 +77,6 @@ class NodeManagerService
 
     public static function install(array $node): void
     {
-        Notification::new()->title('Node ' . $node['version'] . ' Download Starting...')
-            ->message('The download is in progress.')->show();
         ChildProcess::artisan([
             'install:node-version',
             $node['version'],

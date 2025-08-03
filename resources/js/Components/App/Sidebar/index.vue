@@ -1,5 +1,5 @@
 <script setup>
-import {Link} from '@inertiajs/vue3'
+import {Link, usePage} from '@inertiajs/vue3'
 import {FwbButton} from "flowbite-vue";
 import Axios from "axios";
 
@@ -37,6 +37,9 @@ const links = [
 
 ]
 
+const page = usePage()
+const appVersion = page.props.appVersion
+
 const alpzoPage = () => {
     Axios.post('/links/url', {
         url: 'https://alpzo.com'
@@ -58,8 +61,8 @@ const alpzoPage = () => {
                 <div class="w-full text-sm dark:text-white flex flex-col  gap-2">
                     <span>  &#169; {{ new Date().getFullYear() }} </span>
                     <div class="flex flex-col">
-                        <FwbButton size="sm" @click="alpzoPage" class="hover:underline !bg-transparent text-left p-0">
-                            Alpzo
+                        <FwbButton size="sm" class="!bg-transparent text-left p-0">
+                            Alpzo {{appVersion}}
                         </FwbButton>
                         All Rights Reserved.
                     </div>

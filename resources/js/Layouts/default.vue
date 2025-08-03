@@ -1,9 +1,6 @@
 <script setup>
 import Navbar from "@/Components/App/Navbar/index.vue";
 import Sidebar from "@/Components/App/Sidebar/index.vue";
-import {ref} from "vue";
-
-const toat = ref([])
 </script>
 <template>
 
@@ -21,7 +18,4 @@ const toat = ref([])
                 <slot/>
             </div>
         </div>
-
-
-
 </template>

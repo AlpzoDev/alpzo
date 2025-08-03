@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Enums\ProjectType;
+use App\Events\Project\ProjectCreatedEvent;
+use App\Events\Project\ProjectFavoriteEvent;
+use App\Events\Project\ProjectFavoriteRemoveEvent;
 use App\Http\Requests\Project\ProjectRequest;
 use App\Http\Requests\Project\ProjectUpdateRequest;
 use App\Jobs\CheckNewProjectJob;
@@ -137,6 +140,11 @@ class ProjectController extends Controller
         $project->update([
             'is_favorite' => !$project->is_favorite
         ]);
+        if ($project->is_favorite) {
+            ProjectFavoriteEvent::dispatch($project);
+        }else{
+            ProjectFavoriteRemoveEvent::dispatch($project);
+        }
         return response()->json(['success' => true]);
     }
 
