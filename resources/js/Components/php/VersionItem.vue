@@ -65,4 +65,3 @@ Native.on("Native\\Laravel\\Events\\ChildProcess\\ProcessSpawned", (event) => {
     </Item>
 
 </template>
-
